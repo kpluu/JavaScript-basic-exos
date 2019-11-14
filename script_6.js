@@ -1,21 +1,11 @@
-var a = [{
-    "a": "1"
-}, {
-    "b": "2"
-}, {
-    "c": "3"
-}]
-var keys = [];
-var values = [];
+//On déclare d'abord un array
+let weeksOfTHPArray = ["Semaine 1 - Introduction au Code", "Semaine 2 - Découverte de Ruby", "Semaine 3 - Programmation Orientée Objet", "Semaine 4 - Initiation à Rails"];
 
-for (var i = 0; i < a.length; i++) {
-    for (var key in a[i]) {
-        if (a[i].hasOwnProperty(key)) {
-            keys.push(key);
-            values.push(a[i][key]);
-        }
-    }
+//On déclare ensuite un objet
+let weeksOfTHPObject = {Semaine5: "Rails intermédiaire", Semaine6: "Rails avancé", Semaine7: "HTML / CSS et intro au JS", Semaine8: "JavaScript de front"};
+
+console.log("**********Parcourons l'objet :")
+for(let weekAttribut in weeksOfTHPObject) {
+  console.log(weekAttribut); //weekAttribut va avoir les valeurs "Semaine5" à "Semaine8"
+  console.log(weeksOfTHPObject[weekAttribut]);
 }
-
-console.log(keys);
-console.log(values);

@@ -31,9 +31,14 @@ for(let index in entrepreneurs) {
     }
     }
 
-console.log("Sors une array qui contient le prénom et le nom des entrepreneurs :")
+console.log("Sors un array qui contient le prénom et le nom des entrepreneurs :")
+for(let index in entrepreneurs) {
+    
+    var array_name_first = new Array (entrepreneurs[index].first, entrepreneurs[index].last)
 
+    console.log(array_name_first);   
+}    
 
+console.log("Quel âge aurait chaque inventeur aujourd'hui ?")   
 
-console.log("Quel âge aurait chaque inventeur aujourd'hui ?")
 console.log("Trie les entrepreneurs par ordre alphabétique du nom de famille")
