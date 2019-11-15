@@ -34,11 +34,26 @@ for(let index in entrepreneurs) {
 console.log("Sors un array qui contient le prénom et le nom des entrepreneurs :")
 for(let index in entrepreneurs) {
     
-    var array_name_first = new Array (entrepreneurs[index].first, entrepreneurs[index].last)
+    var array_name_first = new Array (entrepreneurs[index].first, entrepreneurs[index].last);
 
     console.log(array_name_first);   
 }    
 
-console.log("Quel âge aurait chaque inventeur aujourd'hui ?")   
+console.log("Quel âge aurait chaque inventeur aujourd'hui ?")
+
+for(let index in entrepreneurs) {
+
+    var this_year = new Date().getFullYear();
+    let age = this_year-entrepreneurs[index].year
+    
+    console.log(age);   
+}
 
 console.log("Trie les entrepreneurs par ordre alphabétique du nom de famille")
+
+for(let index in entrepreneurs) {
+
+    var array_last_name = new Array (entrepreneurs[index].last);
+
+    console.log(array_last_name);   
+}
